@@ -9,9 +9,9 @@
 [x] - build reducer per Understanding component
 [x] - build reducer per Support component
 [x] - build reducer per Comments component
-[] - nest <App/> within Provider 
-[] - create store storeInstance, place logger and combined reducers within
-[] - nest store=storeInstance within opening Provider jsx element
+[x] - nest <App/> within Provider 
+[x] - create store storeInstance, place logger and combined reducers within
+[x] - nest store=storeInstance within opening Provider jsx element
 
 
 # Components

@@ -27,9 +27,22 @@ const commentsReducer = (state={}, action) => {
 }
 
 
+const storeInstance = createStore(
+    combineReducers({
+        feelingsReducer,
+        understandingReducer,
+        supportReducer,
+        commentsReducer,
+    }),
+    applyMiddleware(logger),
+)
 
 
 
+ReactDOM.render(
+<Provider store={storeInstance}>
+    <App />
+</Provider>   , 
+document.getElementById('root'));
 
-ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
