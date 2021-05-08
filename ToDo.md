@@ -1,14 +1,17 @@
 # Set-UP
 [x] - install redux libraries
 [x] - create components for base-mode wire-frames
-[] - bring provider,combine reducers, and applyMiddleware into index.js
-[] - create reducers within index.js to collect review data
+[x] - bring provider,combine reducers, and applyMiddleware into index.js
+[x] - create reducers within index.js to collect review data
 
 ## index.js
-[] - build reducer per Feelings component
-[] - build reducer per Understanding component
-[] - build reducer per Support component
-[] - build reducer per Comments component
+[x] - build reducer per Feelings component
+[x] - build reducer per Understanding component
+[x] - build reducer per Support component
+[x] - build reducer per Comments component
+[] - nest <App/> within Provider 
+[] - create store storeInstance, place logger and combined reducers within
+[] - nest store=storeInstance within opening Provider jsx element
 
 
 # Components
