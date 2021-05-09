@@ -12,13 +12,11 @@ function Comments() {
 
     const handleSubmit = (event) => {
         dispatch({
-            type: 'SUBMIT_COMMENT', payload: {
-                comment: comment
-            }
+            type: 'SUBMIT_COMMENT', payload: comment
         })
-        setComment('');
-          // push to Review page
-          history.push('/Review');
+
+        // push to Review page
+        history.push('/Review');
     } // end handleSubmit
 
     return (

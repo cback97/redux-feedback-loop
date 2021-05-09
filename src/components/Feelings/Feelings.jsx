@@ -4,21 +4,19 @@ import { useState } from 'react';
 import './Feelings.css'
 
 function Feelings() {
-
+// Setting temp stat to hold input value as string
     const [feelings, setFeelings] = useState('');
     const dispatch = useDispatch();
     const history = useHistory();
 
     const handleSubmit = (event) => {
         dispatch({
-            type: 'SUBMIT_FEELING', payload: {
-                feeling: feelings
-
-            }
-
+            type: 'SUBMIT_FEELING', payload: 
+                 feelings
+            
         })
         // clear input field
-        setFeelings('');
+        
         // push to Understanding page
         history.push('/Understanding');
     } // end handleSubmit

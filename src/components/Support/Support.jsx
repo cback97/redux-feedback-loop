@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
-import {useState} from 'react';
+import { useState } from 'react';
 
 function Support() {
 
@@ -10,13 +10,10 @@ function Support() {
 
     const handleSubmit = (event) => {
         dispatch({
-            type: 'SUBMIT_SUPPORT', payload: {
-                support: support
-            }
+            type: 'SUBMIT_SUPPORT', payload: support
         })
-        setSupport('');
-          // push to Comments page
-          history.push('/Comments');
+        // push to Comments page
+        history.push('/Comments');
     } // end handleSubmit
 
     return (
@@ -25,7 +22,7 @@ function Support() {
             <form onSubmit={handleSubmit}>
                 <h3>Rate Level of Support</h3>
                 <h4>Rate From: 1-5</h4>
-                <input required type="number" min="1" max="5" name="Support" value={support} onChange={(event) => setSupport(event.target.value)}/>
+                <input required type="number" min="1" max="5" name="Support" value={support} onChange={(event) => setSupport(event.target.value)} />
                 <button type="submit">Next</button>
             </form>
 
