@@ -10,15 +10,23 @@ function Understanding() {
 
 
     const handleSubmit = (event) => {
+        dispatch({
+            type: 'SUBMIT_UNDERSTANDING', payload: {
+                understanding: understanding
 
-    }
+            }
+
+        })
+        setUnderstanding('');
+    } // end handleSubmit
 
     return (
         <div>
 
             <form onSubmit={handleSubmit}>
                 <h3>Rate Level of Understanding</h3>
-                <input required type="number" min="1" max="5" placeholder="Rate From: 1-5" name="Understanding" onChange={(event) => setUnderstanding(event.target.value)}/>
+                <h4>Rate From: 1-5</h4>
+                <input required type="number" min="1" max="5" name="Understanding" value={understanding} onChange={(event) => setUnderstanding(event.target.value)}/>
                 <button type="submit">Next</button>
             </form>
 

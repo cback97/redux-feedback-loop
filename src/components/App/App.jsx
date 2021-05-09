@@ -20,6 +20,10 @@ function App() {
         <h4>Don't forget it!</h4>
       </header>
         <Feelings/>
+        <Understanding/>
+        <Support/>
+        <Comments/>
+        <Review/>
     </div>
   );
 }

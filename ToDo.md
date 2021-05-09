@@ -26,7 +26,7 @@
 [x] - import useState
 [x] - build form 
 [x] - Form Title
-[] - handleSubmit event - move to Understanding, push input details into feelingsReducer, clear input field.
+[x] - handleSubmit event - move to Understanding, push input details into feelingsReducer, clear input field.
 [x] - create input, require input form validation. input NOT permitted to be less than 1 or greater than 5.
 [x] - export default Feelings to App
 ## Understanding
@@ -35,7 +35,7 @@
 [x] - import useState
 [x] - build form 
 [x] - Form Title
-[] - handleSubmit event - move to Support, push input details into understandingReducer, clear input field.
+[x] - handleSubmit event - move to Support, push input details into understandingReducer, clear input field.
 [x] - create input, require input form validation. input NOT permitted to be less than 1 or greater than 5. 
 [x] - export default Feelings to App
 ## Support
@@ -44,7 +44,7 @@
 [x] - import useState
 [x] - build form 
 [x] - Form Title
-[] - handleSubmit event - move to Comments, push input details into supportReducer, clear input field.
+[x] - handleSubmit event - move to Comments, push input details into supportReducer, clear input field.
 [x] - create input, require input form validation. input NOT permitted to be less than 1 or greater than 5.
 [x] - export default Feelings to App
 ## Comments
@@ -52,7 +52,7 @@
 [x] - import useHistory
 [x] - import useState
 [x] - build form 
-[] - handleSubmit event - move to Review, push input details into commentsReducer, clear input field.
+[x] - handleSubmit event - move to Review, push input details into commentsReducer, clear input field.
 [x] - create input, require input
 [x] - Form Title
 [x] - export default Feelings to App 
@@ -61,6 +61,6 @@
 [x] - import useHistory
 [x] - build form
 [x] - Form Title
-[] - handleSubmit event - move to Feelings
+[x] - handleSubmit event - move to Feelings
 [x] - Display data from reducers in <p> format
 [x] - export default Feelings to App

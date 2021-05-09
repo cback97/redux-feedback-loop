@@ -9,13 +9,16 @@ import logger from 'redux-logger';
 
 const feelingsReducer = (state={}, action) => {
     if(action.type === 'SUBMIT_FEELING'){
-        console.log(action.payload);
+        return action.payload;
     }
     return state;
 }
 
 
 const understandingReducer = (state={}, action) => {
+    if(action.type === 'SUBMIT_UNDERSTANDING'){
+        return action.payload;
+    }
     return state;
 }
 

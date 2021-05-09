@@ -16,7 +16,7 @@ function Feelings() {
             }
 
         })
-
+        setFeelings('');
     } // end handleSubmit
 
     return (
