@@ -10,7 +10,7 @@ function Comments() {
 
             <form>
                 <h3>Comments</h3>
-                <input type="text" name="Comments" placeholder="write comments here"/>
+                <input type="text" placeholder="write comments here" name="Comments" required/>
                 <button type="submit">Next</button>
             </form>
 

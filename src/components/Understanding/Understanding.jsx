@@ -9,7 +9,7 @@ function Understanding() {
 
             <form>
                 <h3>Rate Level of Understanding</h3>
-                <input type="number" name="Understanding" placeholder="Rate From: 1-5"/>
+                <input type="number" min="0" max="5" placeholder="Rate From: 1-5" name="Understanding" required/>
                 <button type="submit">Next</button>
             </form>
 

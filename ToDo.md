@@ -49,7 +49,7 @@
 [x] - import useHistory
 [x] - build form 
 [] - handleClick event - move to Review
-[] - create input, require input form validation
+[x] - create input
 [x] - Form Title
 [x] - export default Feelings to App 
 ## Review

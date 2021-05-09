@@ -8,7 +8,7 @@ function Feelings() {
 
             <form>
                 <h3>Rate Level of Feelings</h3>
-                <input type="number" name="Feelings" placeholder="Rate From: 1-5"/>
+                <input type="number" min="0" max="5" placeholder="Rate From: 1-5" name="Feelings" required/>
                 <button type="submit">Next</button>
             </form>
 
