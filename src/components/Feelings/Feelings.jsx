@@ -7,6 +7,7 @@ function Feelings() {
 
     const [feelings, setFeelings] = useState('');
     const dispatch = useDispatch();
+    const history = useHistory();
 
     const handleSubmit = (event) => {
         dispatch({
@@ -16,12 +17,15 @@ function Feelings() {
             }
 
         })
+        // clear input field
         setFeelings('');
+        // push to Understanding page
+        history.push('/Understanding');
     } // end handleSubmit
 
     return (
 
-        <div>
+        <>
             <form onSubmit={handleSubmit}>
                 <h3>Rate Feelings</h3>
                 <h4>Rate From: 1-5</h4>
@@ -29,7 +33,7 @@ function Feelings() {
                 <button type="submit">Next</button>
             </form>
 
-        </div>
+        </>
 
     )
 }

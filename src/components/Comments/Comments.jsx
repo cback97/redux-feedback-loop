@@ -7,6 +7,7 @@ import { useState } from 'react';
 function Comments() {
     const [comment, setComment] = useState('');
     const dispatch = useDispatch();
+    const history = useHistory();
 
 
     const handleSubmit = (event) => {
@@ -16,10 +17,12 @@ function Comments() {
             }
         })
         setComment('');
+          // push to Review page
+          history.push('/Review');
     } // end handleSubmit
 
     return (
-        <div>
+        <>
 
             <form onSubmit={handleSubmit}>
                 <h3>Comments</h3>
@@ -28,7 +31,7 @@ function Comments() {
                 <button type="submit">Next</button>
             </form>
 
-        </div>
+        </>
     )
 }
 

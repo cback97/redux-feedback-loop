@@ -6,6 +6,7 @@ function Support() {
 
     const [support, setSupport] = useState('');
     const dispatch = useDispatch();
+    const history = useHistory();
 
     const handleSubmit = (event) => {
         dispatch({
@@ -14,10 +15,12 @@ function Support() {
             }
         })
         setSupport('');
+          // push to Comments page
+          history.push('/Comments');
     } // end handleSubmit
 
     return (
-        <div>
+        <>
 
             <form onSubmit={handleSubmit}>
                 <h3>Rate Level of Support</h3>
@@ -26,7 +29,7 @@ function Support() {
                 <button type="submit">Next</button>
             </form>
 
-        </div>
+        </>
     )
 }
 

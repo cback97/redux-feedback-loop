@@ -35,10 +35,6 @@ function App() {
         <Route path="/Review">
           <Review />
         </Route>
-        <Route path="/Review">
-          <Review />
-        </Route>
-
       </Router>
     </div>
   );

@@ -7,6 +7,7 @@ function Understanding() {
 
     const [understanding, setUnderstanding] = useState('');
     const dispatch = useDispatch();
+    const history = useHistory();
 
 
     const handleSubmit = (event) => {
@@ -18,10 +19,12 @@ function Understanding() {
 
         })
         setUnderstanding('');
+         // push to Support page
+         history.push('/Support');
     } // end handleSubmit
 
     return (
-        <div>
+        <>
 
             <form onSubmit={handleSubmit}>
                 <h3>Rate Level of Understanding</h3>
@@ -30,7 +33,7 @@ function Understanding() {
                 <button type="submit">Next</button>
             </form>
 
-        </div>
+        </>
     )
 }
 
