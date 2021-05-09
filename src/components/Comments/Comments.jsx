@@ -9,8 +9,8 @@ function Comments() {
         <div>
 
             <form>
-                <h3>Feelings Review</h3>
-                <input type="text" />
+                <h3>Comments</h3>
+                <input type="text" name="Comments" placeholder="write comments here"/>
                 <button type="submit">Next</button>
             </form>
 

@@ -8,8 +8,8 @@ function Review() {
         <div>
 
             <form>
-                <h3>Feelings Review</h3>
-                <input type="number" />
+                <h3>Review</h3>
+                {/* p tags will go here */}
                 <button type="submit">Next</button>
             </form>
 

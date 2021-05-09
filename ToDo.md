@@ -24,6 +24,7 @@
 [x] - import useDispatch
 [x] - import useHistory
 [x] - build form 
+[x] - Form Title
 [] - handleClick event - move to Understanding, push input details into feelingsReducer
 [] - create input, require input form validation. input NOT permitted to be less than 0 or greater than 5.
 [x] - export default Feelings to App
@@ -31,6 +32,7 @@
 [x] - import useDispatch
 [x] - import useHistory
 [x] - build form 
+[x] - Form Title
 [] - handleClick event - move to Support, push input details into supportReducer
 [] - create input, require input form validation. input NOT permitted to be less than 0 or greater than 5.
 [x] - export default Feelings to App
@@ -38,6 +40,7 @@
 [x] - import useDispatch
 [x] - import useHistory
 [x] - build form 
+[x] - Form Title
 [] - handleClick event - move to Comments, push input details into commentsReducer
 [] - create input, require input form validation. input NOT permitted to be less than 0 or greater than 5.
 [x] - export default Feelings to App
@@ -47,12 +50,13 @@
 [x] - build form 
 [] - handleClick event - move to Review
 [] - create input, require input form validation
-[] - Title of sub-page
+[x] - Form Title
 [x] - export default Feelings to App 
 ## Review
 [x] - import useSelector
 [x] - import useHistory
-[] - build form 
+[x] - build form
+[x] - Form Title
 [] - handleClick event - move to Feelings
-[] - Display data from reducers in <p> format
+[x] - Display data from reducers in <p> format
 [x] - export default Feelings to App
