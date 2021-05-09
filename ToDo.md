@@ -23,6 +23,7 @@
 ## Feelings
 [x] - import useDispatch
 [x] - import useHistory
+[x] - import useState
 [x] - build form 
 [x] - Form Title
 [] - handleClick event - move to Understanding, push input details into feelingsReducer
@@ -31,6 +32,7 @@
 ## Understanding
 [x] - import useDispatch
 [x] - import useHistory
+[x] - import useState
 [x] - build form 
 [x] - Form Title
 [] - handleClick event - move to Support, push input details into supportReducer
@@ -39,6 +41,7 @@
 ## Support
 [x] - import useDispatch
 [x] - import useHistory
+[x] - import useState
 [x] - build form 
 [x] - Form Title
 [] - handleClick event - move to Comments, push input details into commentsReducer
@@ -47,6 +50,7 @@
 ## Comments
 [x] - import useDispatch
 [x] - import useHistory
+[x] - import useState
 [x] - build form 
 [] - handleClick event - move to Review
 [x] - create input
