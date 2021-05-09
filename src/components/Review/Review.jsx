@@ -15,10 +15,10 @@ function Review() {
     return (
         <form onSubmit={handleSubmit}>
             <h3>Review</h3>
-            <p>{reduxStore.feelingsReducer}</p>
-            <p>{reduxStore.understandingReducer}</p>
-            <p>{reduxStore.supportReducer}</p>
-            <p>{reduxStore.commentsReducer}</p>
+            <p>Feeling: {reduxStore.feelingsReducer}</p>
+            <p>Understanding: {reduxStore.understandingReducer}</p>
+            <p>Supported: {reduxStore.supportReducer}</p>
+            <p>Comment: {reduxStore.commentsReducer}</p>
             <button type="submit">Submit Review</button>
         </form>
     )

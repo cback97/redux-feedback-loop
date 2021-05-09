@@ -14,7 +14,6 @@ function Comments() {
         dispatch({
             type: 'SUBMIT_COMMENT', payload: comment
         })
-
         // push to Review page
         history.push('/Review');
     } // end handleSubmit
