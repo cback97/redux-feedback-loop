@@ -17,7 +17,7 @@
 # Components
 
 ## App
-[] - import Components 
+[x] - import Components 
 [x] - import Hash Router
 [] - establish Routes for components
 ## Feelings
@@ -26,21 +26,21 @@
 [x] - build form 
 [] - handleClick event - move to Understanding, push input details into feelingsReducer
 [] - create input, require input form validation. input NOT permitted to be less than 0 or greater than 5.
-[] - export default Feelings to App
+[x] - export default Feelings to App
 ## Understanding
 [x] - import useDispatch
 [x] - import useHistory
 [x] - build form 
 [] - handleClick event - move to Support, push input details into supportReducer
 [] - create input, require input form validation. input NOT permitted to be less than 0 or greater than 5.
-[] - export default Feelings to App
+[x] - export default Feelings to App
 ## Support
 [x] - import useDispatch
 [x] - import useHistory
 [x] - build form 
 [] - handleClick event - move to Comments, push input details into commentsReducer
 [] - create input, require input form validation. input NOT permitted to be less than 0 or greater than 5.
-[] - export default Feelings to App
+[x] - export default Feelings to App
 ## Comments
 [x] - import useDispatch
 [x] - import useHistory
@@ -48,11 +48,11 @@
 [] - handleClick event - move to Review
 [] - create input, require input form validation
 [] - Title of sub-page
-[] - export default Feelings to App 
+[x] - export default Feelings to App 
 ## Review
 [x] - import useSelector
 [x] - import useHistory
 [] - build form 
 [] - handleClick event - move to Feelings
 [] - Display data from reducers in <p> format
-[] - export default Feelings to App
+[x] - export default Feelings to App

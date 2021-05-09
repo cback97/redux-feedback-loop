@@ -15,3 +15,5 @@ function Feelings() {
         </div>
     )
 }
+
+export default Feelings;
