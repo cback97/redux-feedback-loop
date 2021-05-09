@@ -4,14 +4,23 @@ import { useHistory } from 'react-router-dom';
 
 function Review() {
 
+   const reduxStore = useSelector(store => store);
+
+    const handleSubmit = () => {
+
+    } // end handleSubmit
+
     return (
         <div>
 
-            <form>
+            
                 <h3>Review</h3>
-                {/* p tags will go here */}
-                <button type="submit">Next</button>
-            </form>
+                <p>{reduxStore.feelingsReducer}</p>
+                <p>{reduxStore.understandingReducer}</p>
+                <p>{reduxStore.supportReducer}</p>
+                <p>{reduxStore.commentsReducer}</p>
+                <button type="submit">Submit Review</button>
+           
 
         </div>
     )

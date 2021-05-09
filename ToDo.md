@@ -19,7 +19,7 @@
 ## App
 [x] - import Components 
 [x] - import Hash Router
-[] - establish Routes for components
+[x] - establish Routes for components
 ## Feelings
 [x] - import useDispatch
 [x] - import useHistory
