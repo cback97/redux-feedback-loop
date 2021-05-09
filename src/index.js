@@ -8,6 +8,9 @@ import { Provider } from 'react-redux';
 import logger from 'redux-logger';
 
 const feelingsReducer = (state={}, action) => {
+    if(action.type === 'SUBMIT_FEELING'){
+        console.log(action.payload);
+    }
     return state;
 }
 

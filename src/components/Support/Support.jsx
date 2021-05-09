@@ -7,7 +7,7 @@ function Support() {
     const [support, setSupport] = useState('');
     const dispatch = useDispatch();
 
-    const handleSubmit = () => {
+    const handleSubmit = (event) => {
 
     }
 
@@ -16,7 +16,7 @@ function Support() {
 
             <form onSubmit={handleSubmit}>
                 <h3>Rate Level of Support</h3>
-                <input required type="number" min="1" max="5" placeholder="Rate From: 1-5" name="Support" onChange={(event) => setSupport(event.target.value)}>
+                <input required type="number" min="1" max="5" placeholder="Rate From: 1-5" name="Support" onChange={(event) => setSupport(event.target.value)}/>
                 <button type="submit">Next</button>
             </form>
 

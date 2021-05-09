@@ -9,7 +9,7 @@ function Understanding() {
     const dispatch = useDispatch();
 
 
-    const handleSubmit = () => {
+    const handleSubmit = (event) => {
 
     }
 

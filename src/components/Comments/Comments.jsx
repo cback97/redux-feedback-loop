@@ -8,7 +8,7 @@ function Comments() {
     const [comment, setComment] = useState('');
     const dispatch = useDispatch();
 
-    const handleSubmit = () => {
+    const handleSubmit = (event) => {
 
     }
 
