@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { useHistory } from 'react-router-dom';
 
 
@@ -16,10 +16,22 @@ function Review() {
     const handleSubmit = () => {
         // push to home page
         let finalReview = {
-
+            feeling: feeling,
+            understanding: understanding,
+            support: supported,
+            comment: comment
         }
-        axios.post('/submit')
-        history.push('/Success');
+
+        axios.post('/submit', finalReview)
+        .then((response) => {
+            console.log('Feedback successfully submitted', response);
+            dispatch
+            history.push('/Success');
+        })
+        .catch((err) => {
+            alert('Error, review could not be submitted')
+            console.log('Error, review could not be submitted', err);
+        })
     } // end handleSubmit
 
     return (
