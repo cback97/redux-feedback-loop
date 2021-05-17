@@ -25,7 +25,6 @@ function Review() {
         axios.post('/submit', finalReview)
         .then((response) => {
             console.log('Feedback successfully submitted', response);
-            dispatch
             history.push('/Success');
         })
         .catch((err) => {

@@ -9,7 +9,7 @@ import Support from '../Support/Support';
 import Understanding from '../Understanding/Understanding';
 import Comments from '../Comments/Comments';
 import Review from '../Review/Review';
-
+import Success from '../Success/Success'
 
 function App() {
 
@@ -36,6 +36,9 @@ function App() {
         </Route>
         <Route path="/Review">
           <Review />
+        </Route>
+        <Route path="/Success">
+          <Success />
         </Route>
       </Router>
 
