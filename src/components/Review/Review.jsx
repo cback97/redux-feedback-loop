@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { useSelector } from 'react-redux'
 import { useHistory } from 'react-router-dom';
 
@@ -6,10 +7,19 @@ function Review() {
 
     const reduxStore = useSelector(store => store);
     const history = useHistory();
+    
+    let feeling = reduxStore.feelingsReducer;
+    let understanding = reduxStore.understandingReducer;
+    let supported = reduxStore.supportReducer;
+    let comment = reduxStore.commentsReducer;
 
     const handleSubmit = () => {
         // push to home page
-        history.push('/');
+        let finalReview = {
+
+        }
+        axios.post('/submit')
+        history.push('/Success');
     } // end handleSubmit
 
     return (
