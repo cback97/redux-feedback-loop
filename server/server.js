@@ -12,11 +12,13 @@ app.use(express.static('build'));
 /** ---------- EXPRESS ROUTES ---------- **/
 app.post('/submit', (req,res) => {
     const review = req.body;
+    console.log(review);
     const query = `INSERT INTO feedback ("feeling", "understanding", "support", "comments")
                 VALUES ($1, $2, $3, $4);`;
-              pool.query(query, [review.feeling, review.understanding, review.support, review.comments])
+              pool.query(query, [review.feeling, review.understanding, review.support, review.comment])
               .then( result => {
                   res.sendStatus(201);
+                  console.log(result);
               })
               .catch(err => {
                   console.log('Review not sent to db', err);
