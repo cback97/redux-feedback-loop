@@ -14,6 +14,7 @@ function Review() {
     let comment = reduxStore.commentsReducer;
 
     const handleSubmit = () => {
+        event.preventDefault();
         // push to home page
         let finalReview = {
             feeling: feeling,
